@@ -7,11 +7,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 
 
 @Composable
-fun AtomsScreens() {
+fun AtomsScreens(navController: NavHostController) {
     Column(modifier = Modifier.padding(5.dp)) {
-        Text(text = "A Simple Text", style = MaterialTheme.typography.headlineLarge, color = MaterialTheme.colorScheme.primary)
+        Text(text = "You are in Atom Page", style = MaterialTheme.typography.headlineLarge, color = MaterialTheme.colorScheme.primary)
     }
 }
