@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    FirstView()
                 }
             }
         }
@@ -41,14 +41,14 @@ class MainActivity : ComponentActivity() {
 
 @ExperimentalComposeUiApi
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
+fun FirstView() {
 
-    Surface(color = MaterialTheme.colorScheme.background,
-        modifier = Modifier.fillMaxSize(), content = {
-            Column(verticalArrangement = Arrangement.Center,
+    Surface(color = MaterialTheme.colorScheme.background, modifier = Modifier.fillMaxSize(), content = {
+            Column(verticalArrangement = Arrangement.Top,
                 horizontalAlignment = Alignment.CenterHorizontally
                 ) {
                 GalleryNavigation()
+//                AtomsScreens()
             }
         }
         )
@@ -59,6 +59,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     MyComposeGalleryTheme {
-        Greeting("Android")
+        FirstView()
     }
 }
