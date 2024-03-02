@@ -64,3 +64,13 @@ fun CustomText(insertText: String = "") {
 
     )
 }
+
+@Composable
+fun PasswordTextField() {
+    val password = rememberTextFieldState()
+
+    BasicSecureTextField(
+        state = password,
+        textOBfuscationMode
+    )
+}
